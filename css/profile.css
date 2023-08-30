@@ -1,0 +1,140 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 69%;
+    border: 2px solid firebrick;
+    background: rgb(242,179,100);
+    background: linear-gradient(158deg, rgba(242,179,100,1) 10%, rgba(208,123,75,1) 100%); 
+}
+section
+{
+    width: 83%;
+    height: 80%;
+    /* border: 2px solid #736c66; */
+    /* border-radius: 30px; */
+    box-shadow: 18px 20px 10px rgb(11, 11, 11,0.3);
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(0, 71, 225); */
+}
+.comman
+{
+    margin: 20px;
+    padding: 20px;
+    /* background-color: red; */
+}
+.box-1
+{
+    
+    width: 6900px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    /* border: 2px solid red; */
+}.box-2
+{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+.box1-one
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex:4 */
+}
+.box1-two
+{
+    flex:1
+}
+.box1-three
+{
+    flex:1
+}
+.profile-pic
+{
+    border-radius: 90%;
+    object-fit: cover;
+    object-position: top;
+    width: 35%;
+    height: 45%;
+    margin-bottom: 20px;
+}
+.button-comman
+{
+    /* font-weight: 800; */
+    background-color: transparent;
+    width: 50%;
+    height: 40%;
+    border-radius: 30px;
+    /* outline: none; */
+    border: 2px solid #b1a7a5;
+    padding:8px;
+    /* margin: auto; */
+    color: #736c66;
+}
+
+.name
+{
+    color:#736c66;
+    /* font-size: 28px; */
+}
+.proffesion
+{
+    /* font-weight: 100; */
+    color:#736c66;
+    /* font-size: 18px; */
+}
+.box-2-commmon
+{
+    background-color: #ffdecf;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box2-text
+{
+    /* font-size: var(--system-16-font-size); */
+    /* font-weight: 600; */
+}
+.box2-one
+{
+   border-bottom:4px solid white ;
+}
+.box2-two
+{
+    border-bottom:4px solid white ;
+}
+.box2-three
+{
+   
+    /* flex: 1; */
+}

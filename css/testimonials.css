@@ -1,0 +1,179 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height:100%
+}
+    /* Setting UP BackGround color */
+body{
+    background-color: #0d0d0d;
+    color:white;
+}
+    /*  BODY SETUP ENDS*/
+
+    /* SETTING UP THE PROFILE LAYOUT*/
+.profile
+{
+    border: 2px solid red;  /*DID FOR TESTING */
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 96%;
+    margin: auto;/*just for testing remove after*/
+    height: 12vh;
+    display: flex;
+    
+} 
+    /* PROFILE SETUP COMPLETED*/
+
+.avatar
+{
+    
+    height: 80%;
+    border: 2px solid green;
+    border-radius:16px;
+    margin: 0 14px;
+    background-color: #373737;
+}
+.profile-info
+{
+    border: 2px solid blue;
+    /* width: 90%; */
+    height: 80%;
+}
+
+
+    /*profile-name setting up*/
+.profile-name
+{
+    border: 2px solid yellow;
+    font-size: 18px;
+}
+        /*SETTED UP THE profile-PROFESSION*/
+    /*profile-profession setting up*/
+.profile-profession
+{
+    border: 2px solid red;
+    border-radius: 12px;
+    font-size: 10px;
+    padding: 4px 10px;
+    background-color: #3e3e40;
+}
+    /*SETTED UP THE profile-PROFESSION*/
+
+.more-info
+{
+    /* border:2px solid red; */
+    box-shadow: -8px -8px 50px goldenrod;
+    border-bottom: none;
+    border-right: none;
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom-left-radius: 8px;
+
+
+/* testing*/
+/* background: rgb(252,205,66);
+background: linear-gradient(90deg, rgba(252,205,66,1) 6%, rgba(33,33,35,1) 100%);  */
+/* testing*/
+}    
+.down-arrow
+{
+    width: 100%;
+}
+.about
+{
+    margin: auto;
+    margin-bottom: 30px;;
+    border:2px solid rgb(243, 88, 113);
+    padding: 16px;
+    width: 96%;
+}
+.about-me-text
+{
+    font-size: 24px;
+    position: relative;
+    margin-bottom:30px ;
+}
+.about-me-text::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffc361;
+}
+.about-me-para
+{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+        /*ALL THE BEST*/
+        /*STARTING TO ADD CSS ABOUT WHAT I AM DOING */
+/*WHAT I AM DOING */
+
+                    /*THE SEVICE BOX*/
+.testimonial-box
+{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    width: 96%;
+    margin: 40px 6px 14px 6px;
+    padding: 5px;
+    /* padding: 25px 20px 30px 20px; */
+    flex-direction: column;
+    align-items:center;
+    background-color: #222224;
+    border-radius: 16px;
+    border: 2px solid purple;/*Testing remove after*/
+}        
+/*SEVICE IMAGE*/
+.testimonial-img
+{
+    position: absolute;
+    background-color: #3e3e3e;
+    border-radius: 20px;
+    top: -30px;
+    left: 14px;
+    border: 2px solid red;
+    width: 60px;
+    height:60px;
+}
+/*testimonial-title*/
+.testimonial-title
+{
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+/*SERVICE PARA */
+.testimonial-para
+{
+    text-align: center;
+    font-size:10px;
+    height: 100%;
+    /* width: 103%; */
+    /* padding: 14px 0px; */
+    padding-bottom: 10px;
+    /* border:2px solid red; */
+
+}
+.scrool-bar
+{
+    border: 2px solid rgb(0, 255, 251);/*TESTING */
+    /* min-height: 20px; */
+    overflow: hidden;
+    display: flex;
+    overflow-x: auto;
+}

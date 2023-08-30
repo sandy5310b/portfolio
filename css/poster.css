@@ -1,0 +1,68 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body,html
+{
+    width: 100%;
+    height: 100%;
+    
+}
+section
+{
+    width: 60%;
+    height:40%;
+    display: flex;
+
+}
+.box1
+{
+    border :2px solid rgb(20, 250, 112);
+    width: 50%;
+    height: 100%;
+}
+.box2
+{
+    border :2px solid red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.box2-1
+{
+    flex-grow: 1;
+    font-size: 55px;
+}
+.box2-2
+{
+    flex-grow: 1;   
+}
+.box2-3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: 2px solid red;
+    text-decoration: none;
+}
+.box2-3 a{
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    color:white;
+    background-color: black;
+    border-radius: 28px ;
+    text-decoration: none;
+    border: 2px solid red;
+}
+.scare-crow
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,570 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body,html{
+    /* width: auto;
+    height:auto; */
+    width: 100%;
+    height:100%;
+}
+    /* Setting UP BackGround color */
+body{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;align-items: center;
+    background-color: #0d0d0d;
+    color:white;
+    padding-bottom: 40px;
+}
+    /*  BODY SETUP ENDS*/
+
+    /* SETTING UP THE PROFILE LAYOUT*/
+.profile
+{
+    /* border: 2px solid rgb(0, 255, 60);   */
+    /*DID FOR TESTING */
+    /* border: 2px solid #383838;   */
+    
+    border-radius: 16px;
+    background-color: #1e1e1f;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 96%;
+    margin: 14px 0px 14px 8px;
+    /*CHANGE THIS TO FLEX*/
+    height: 12vh;
+    
+} 
+.profile-auto-set
+{
+    height: auto;
+}
+.profile-part1
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    /* DID FOR TESTING */
+    /* border: 2px solid red; */
+}
+    /* PROFILE SETUP COMPLETED*/
+    /*PROFILE SETUP IF THE CLICKED */
+.profile-part2
+{
+    display: none;
+    color: rgb(24, 20, 20);
+    margin-top: 20px;
+    background-color: #1e1e1f;
+    /* height: 40vh; */
+    /* BECAUSE OF FLEX NOT NEEDED TO MENTION THE HEIGHT  */
+}
+.profile-extended
+{
+    display: flex;
+    flex-direction: column;
+    /* height: 28vh; */
+    border-top: 2px solid #383838;
+    border-bottom: 2px solid #383838;
+    
+}
+.avatar
+{
+    
+    height: 80%;
+    max-width: 80px;
+    max-height: 78px;
+    /* border: 2px solid green; */
+    border-radius:16px;
+    margin-right: 14px;
+    /* margin: 0 14px 0 0; */
+    background-color: #373737;
+}
+.profile-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* pointer-events: ; */
+    /* border: 2px solid blue; */
+    /* width: 90%; */
+    height: 80%;
+}
+
+
+    /*profile-name setting up*/
+.profile-name
+{
+    /* border: 2px solid yellow; */
+    font-size: 18px;
+}
+        /*SETTED UP THE profile-PROFESSION*/
+    /*profile-profession setting up*/
+.profile-profession
+{
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    margin-top: 8px;
+    font-size: 10px;
+    padding: 4px 10px;
+    background-color: #3e3e40;
+}
+    /*SETTED UP THE profile-PROFESSION*/
+
+.more-info
+{
+    /* border:2px solid red; */
+    box-shadow: -8px -8px 50px goldenrod;
+    border-bottom: none;
+    border-right: none;
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+
+/* testing*/
+/* background: rgb(252,205,66);
+background: linear-gradient(90deg, rgba(252,205,66,1) 6%, rgba(33,33,35,1) 100%);  */
+/* testing*/
+}  
+.contact-comman 
+{
+    display: flex;
+    /*DID FOR TESTING*/
+    /* border: 2px solid greenyellow; */
+    /* border: 2px solid #383838;   */
+    padding: 8px;
+}
+.contact-pic-box
+{
+    width: 34px;
+    height:34px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    align-items: center;
+    border-radius: 6px;
+    /* DID FOR TESTING */
+    /* border:2px solid red; */
+} 
+.contact-content
+{
+    margin-left: 20px;
+    /* DID FOR TESTING */
+    /* border :2px solid purple; */
+}
+.contact-title
+{
+    font-size: 14px;
+    color:#939393;
+}
+.conatct-para
+{
+    padding: 6px 0px;
+    font-size: 12px;
+    color:white;
+}
+.mail-pic
+{
+    width: 84%;
+}
+.media-list
+{
+    display: flex;
+    margin-bottom: 10px;
+    /* DID FOR TESTING */
+    /* border: 2px solid rgb(38, 0, 255); */
+}
+.media-pic-box
+{
+    /* DID FOR TESTING */
+    /* border: 2px solid red; */
+    margin-left: 12px;
+    padding: 2px;
+}
+.media-pic
+{
+    width: 20px;
+    /* height: 30px; */
+    
+
+}
+.down-arrow
+{
+    width: 100%;
+}
+.about
+{
+    /* margin: auto; */
+    /* dis */
+    width: 96%;
+    border:2px solid rgb(243, 88, 113);/*DID FOR TESTING*/
+    border: 2px solid #383838;  
+    background-color: #1e1e1f;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+.about-me-text
+{
+    font-size: 24px;
+    position: relative;
+    margin-bottom:30px ;
+}
+.about-me-text::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffc361;
+}
+.about-me-para
+{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+        /*ALL THE BEST*/
+        /*STARTING TO ADD CSS ABOUT WHAT I AM DOING */
+/*WHAT I AM DOING */
+
+                    /*THE SEVICE BOX*/
+.service-box
+{
+    display: flex;
+    margin-top:14px ;
+    padding: 8px 0px 8px 0px;
+    flex-direction: column;
+    align-items:center;
+    background-color: #29292c;
+    border-radius: 16px;
+    /* border: 2px solid purple;Testing remove after */
+    border: 2px solid #383838;  
+    
+}        
+/*SEVICE IMAGE*/
+.service-img
+{
+    width: 40px;
+    height:40px;
+}
+/*SERVICE PARA */
+.doing-para
+{
+    text-align: center;
+    font-size:12px;
+    width: 88%;
+    padding: 14px 20px;
+    /* border:2px solid red; */
+}
+.testimonial-box
+{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    width: 96%;
+    margin: 40px 6px 14px 6px;
+    padding: 5px;
+    /* padding: 25px 20px 30px 20px; */
+    flex-direction: column;
+    align-items:center;
+    background-color: #222224;
+    border-radius: 16px;
+    border: 2px solid purple;
+    border: 2px solid #383838;  
+    /* Testing remove after */
+}        
+.testimonial-heading
+{
+    margin-top:20px;
+    font-size: 20px;
+}
+/*SEVICE IMAGE*/
+.testimonial-img
+{
+    position: absolute;
+    background-color: #3e3e3e;
+    border-radius: 20px;
+    top: -30px;
+    left: 14px;
+    /* border: 2px solid red; */
+    width: 60px;
+    height:60px;
+}
+/*testimonial-title*/
+.testimonial-title
+{
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+/*SERVICE PARA */
+.testimonial-para
+{
+    text-align: center;
+    font-size:10px;
+    height: 100%;
+    /* width: 103%; */
+    /* padding: 14px 0px; */
+    padding-bottom: 10px;
+    /* border:2px solid red; */
+
+}
+.scrool-bar
+{
+    border: 2px solid rgb(0, 255, 251);
+    border: 2px solid #383838;  
+    border-radius: 16px;
+    /*TESTING */
+    /* min-height: 20px; */
+    display: flex;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+.footer
+{
+    /* height: 5vh; */
+    /* border:2px solid red; */
+}
+/*NAVIGATION BAR*/
+nav
+{
+    display: flex;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(33, 33, 35, 0.8);
+    justify-content: space-around;
+    border:2px solid forestgreen;
+    border: 2px solid #383838;  
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    backdrop-filter:blur(4px) ;
+    border-bottom: none;
+    padding: 10px 0px;
+}
+
+.space {
+    /* border: 2px solid red;
+    display: flex;
+    height: 60vh;
+    margin-bottom:0px; */
+}
+.nav1-highlight-add
+{
+    color:#f6b00d;
+}
+.about-hide
+{
+    display: none;
+}
+.portfolio-hide
+{
+    display: none;
+}
+.contact-hide
+{
+    display:none;
+}
+.nav1-highlight-remove
+{
+    color:white
+}
+.nav2-highlight-add
+{
+    color:#f6b00d;
+}
+.nav2-highlight-remove
+{
+    color:white
+}
+.nav3-highlight-add
+{
+    color:#f6b00d;
+}
+.nav3-highlight-remove
+{
+    color:white
+}                                                   
+
+
+
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+/* PORTFOLIO PAGE ENTERED ALL THE BEST */
+.portfolio
+{
+    margin: auto;
+    width: 96%;
+    padding: 10px;
+    background-color: #1e1e1f;
+    /* border: 2px solid rebeccapurple; */
+}
+.portfolio-img-box
+{
+    font-size: 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    /*      DID FOR TESTING*/
+    /* border: 2px solid yellow; */
+}
+.portfolio-title
+{
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.portfolio-title::after
+{
+    content: "";
+    z-index: 222;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffc361;
+}
+.portfolio-box
+{
+    /* padding: 8px; */
+    /* border: 2px solid red; */
+    /* width: 100%; */
+
+}
+.portfolio-box:hover .portfolio-img
+{
+    transform: scale(1.05);
+}
+.portfolio-img
+{
+    border-radius: 30px;
+    /* transform: scale(1.5); */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-content
+{
+    /* font-size: 22px; */
+
+    padding: 12px;
+    /* border: 2px solid rgb(5, 197, 235); */
+    color: white;
+}
+.protfolio-content-one
+{
+    font-size: 14px;
+}
+.protfolio-content-two
+{
+    font-size: 10px;
+}
+.contact-form-comman
+{
+    outline: none;
+    border: 2px solid #383838; 
+    background-color: inherit;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+.contact-page
+{
+    margin: auto;
+    width: 96%;
+    border:2px solid rgb(243, 88, 113);/*DID FOR TESTING*/
+    border: 2px solid #383838;  
+    background-color: #1e1e1f;
+    border-radius: 16px;
+    padding: 16px;
+}
+.contact-page-heading
+{
+    /* border: 2px solid red; */
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.contact-page-heading::after
+{
+    content: "";
+    z-index: 222;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffc361;
+}
+.form-tittle
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 16px 0;
+}
+.send-message-button
+{
+    color:#ffc361;
+    font-size: 18px;
+}
+.telegram-img
+{
+    /* border: 2px solid red; */
+    margin-right: 20px;
+    width: 16px;
+    height: 16px;
+}
+
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/* MOBILE LAYOUT COMPLETED */
+
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: rgb(58, 247, 89);
+      flex-direction: row;
+        }
+        .profile
+        {
+            width: 18%;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: space-between;
+            height: 50%;
+        }
+        
+
+  }

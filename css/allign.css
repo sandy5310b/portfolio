@@ -1,0 +1,36 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body ,html
+{
+    width: 100%;
+    height: 100%;
+}
+section ul
+{
+    
+    height: 80%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 12px solid rgb(0, 0, 0);
+}
+.comman
+{
+    width: 19%;
+    /* width: 19px; */
+    margin: 10px;
+    /* width: 8%; */
+    /* font-size: 40px; */
+    /* font: ; */
+    /* height: 10%; */
+    padding: 20px;
+    background-color: red;
+}
+.three
+{
+    height: 300px;
+}

@@ -1,0 +1,891 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html{
+    /* border: 2px solid yellow;DID DOR TEST */
+    width: auto;
+    height:auto;
+}
+    /* Setting UP BackGround color */
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    /* border: 2px solid rebeccapurple;DID FOR TEST */
+    /* display: f; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d0d0d;
+    color:white;
+    /* padding-bottom: 40px; */
+}
+    /*  BODY SETUP ENDS*/
+
+    /* SETTING UP THE PROFILE LAYOUT*/
+.main
+{
+    /* border: 2px solid rebeccapurple;DID FOR TEST */
+    width: 96%;
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center; */
+}    
+.profile
+{
+    transition: 0.4s;
+    /* border: 2px solid rgb(255, 0, 0);  DID FOR TEST */
+    /*DID FOR TESTING */
+    /* border: 2px solid #383838;   */
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #1e1e1f;
+    padding: 0.2rem;
+    padding-left: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 96%;
+    /* margin: 14px 0px 14px 1px; */
+    margin-bottom: 1.2rem ;
+    margin-top: 1.2rem;
+    /*CHANGE THIS TO FLEX*/
+    /* height: 12vh; */
+    
+} 
+.profile-auto-set
+{
+    height: auto;
+}
+.profile-info
+{
+    text-align: left;
+}
+.profile-part1
+{ 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: flex-e; */
+    flex-shrink: 0;
+    /* DID FOR TESTING */
+    /* border: 2px solid red; */
+}
+    /* PROFILE SETUP COMPLETED*/
+    /*PROFILE SETUP IF THE CLICKED */
+.profile-part2
+{
+    display: none;
+    color: rgb(24, 20, 20);
+    /* font-size:rem; */
+    margin-top: 20px;
+    background-color: #1e1e1f;
+    /* height: 40vh; */
+    /* BECAUSE OF FLEX NOT NEEDED TO MENTION THE HEIGHT  */
+}
+.profile-extended
+{
+    display: flex;
+    flex-direction: column;
+    /* height: 28vh; */
+    border-top: 2px solid #383838;
+    border-bottom: 2px solid #383838;
+    
+}
+.avatar
+{
+    
+    height: 70%;
+    /* border: 2px solid green; */
+    border-radius:16px;
+    margin-right: 14px;
+    /* margin: 0 14px 0 0; */
+    background-color: #373737;
+}
+.profile-info
+{
+  
+    /* padding-top: 1rem;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* pointer-events: ; */
+    /* border: 2px solid blue; */
+    /* width: 90%; */
+    height: 80%;
+}
+
+
+    /*profile-name setting up*/
+.profile-name
+{
+    /* border: 2px solid yellow; */
+    font-size: 1.5rem;
+}
+        /*SETTED UP THE profile-PROFESSION*/
+    /*profile-profession setting up*/
+.profile-profession
+{
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    margin-top: 8px;
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 4px 10px;
+    background-color: #3e3e40;
+}
+    /*SETTED UP THE profile-PROFESSION*/
+.media-pic-box:hover img
+{
+    transform: scale(1.4);
+    /* border: 2px solid red; */
+}
+.more-info
+{
+    /* border:2px solid red; */
+    box-shadow: -8px -8px 50px goldenrod;
+    /* border-bottom: none;
+    border-right: none; */
+    border-left:0.3px solid rgba(220, 193, 42,0.4) ;
+    border-bottom:0.3px solid rgba(220, 193, 42,0.4) ;
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+
+/* testing*/
+/* background: rgb(252,205,66);
+background: linear-gradient(90deg, rgba(252,205,66,1) 6%, rgba(33,33,35,1) 100%);  */
+/* testing*/
+}  
+.contact-comman 
+{
+    display: flex;
+    /*DID FOR TESTING*/
+    /* border: 2px solid greenyellow; */
+    /* border: 2px solid #383838;   */
+    padding: 8px;
+}
+.contact-pic-box
+{
+    width: 2rem;
+    height:34px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    align-items: center;
+    border-radius: 6px;
+    /* DID FOR TESTING */
+    /* border:2px solid red; */
+} 
+.contact-content
+{
+    margin-left: 20px;
+    /* DID FOR TESTING */
+    /* border :2px solid purple; */
+}
+.contact-title
+{
+    font-size: 0.8rem;
+    color:#939393;
+}
+.conatct-para
+{
+    padding: 6px 0px;
+    font-size: 0.8rem;
+    color:white;
+}
+.mail-pic
+{
+    width: 84%;
+}
+.media-list
+{
+    display: flex;
+    margin-bottom: 10px;
+    /* DID FOR TESTING */
+    /* border: 2px solid rgb(38, 0, 255); */
+}
+.media-pic-box
+{
+    /* DID FOR TESTING */
+    /* border: 2px solid red; */
+    margin-left: 12px;
+    padding: 2px;
+}
+.service-heading
+{
+    font-size: 2rem;
+}
+.media-pic
+{
+    width: 20px;
+    /* height: 30px; */
+    
+
+}
+.down-arrow
+{
+    width: 100%;
+}
+
+.about
+{   
+    /* transition: 9.4s; */
+    /* margin: auto; */
+    /* dis */
+    font-size: 12px;
+    width: 100%;
+    /* border:2px solid rgb(10, 214, 250);DID FOR TESTING */
+    border: 2px solid #383838;  
+    background-color: #1e1e1f;
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+.about-me-text
+{
+    font-size: 2rem;/* em becaution*/ 
+    position: relative;
+    margin-bottom:30px ;
+    /* border: 4px solid red;DID FOR TEST */
+}
+.about-me-text::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 3em;
+    height: 0.08em;
+    background-color: #ffc361;
+}
+.about-me-para
+{
+    
+    padding-bottom: 20px;
+    font-size: 1rem;
+    /* border:2px solid green;DID FOR TEST */
+}
+.service-title
+{
+    font-size: 1.05rem;
+    padding-top: 0.4rem;
+}
+        /*ALL THE BEST*/
+        /*STARTING TO ADD CSS ABOUT WHAT I AM DOING */
+/*WHAT I AM DOING */
+
+                    /*THE SEVICE BOX*/
+.service-box
+{
+    display: flex;
+    flex-wrap: 0;
+    margin-top:14px ;
+    padding: 8px 0px 8px 0px;
+    flex-direction: column;
+    align-items:center;
+    background-color: #29292c;
+    border-radius: 16px;
+    /* border: 2px solid purple;Testing remove after */
+    border: 2px solid #383838;  
+    
+}   
+
+.doing-para
+{
+    text-align: center;
+    font-size: 0.8rem;
+    /* font-size:; */
+    
+    width: 100%;
+    padding: 14px 20px;
+    /* border:2px solid red;DID FOR TEST */
+}     
+/*SEVICE IMAGE*/
+.service-img
+{
+    width: 3.4rem;
+    /* height:40px; */
+}
+/*SERVICE PARA */
+
+.testimonial-box
+{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    width: 96%;
+    margin: 40px 6px 14px 6px;
+    padding: 5px;
+    /* padding: 25px 20px 30px 20px; */
+    flex-direction: column;
+    align-items:center;
+    background-color: #222224;
+    border-radius: 16px;
+    border: 2px solid purple;
+    border: 2px solid #383838;  
+    /* Testing remove after */
+}        
+.testimonial-heading
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.8rem;
+    /* border: 2px solid yellow;DID FOR TEST */
+}
+/*SEVICE IMAGE*/
+.testimonial-img
+{
+    position: absolute;
+    background-color: #3e3e3e;
+    border-radius: 20px;
+    top: -30px;
+    left: 14px;
+    /* border: 2px solid red; */
+    width: 60px;
+    height:60px;
+}
+/*testimonial-title*/
+.testimonial-title
+{
+    font-size: 1.4rem;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+/*SERVICE PARA */
+.testimonial-para
+{
+    text-align: center;
+    font-size:0.88rem;
+    height: 100%;
+    /* width: 103%; */
+    /* padding: 14px 0px; */
+    padding: 0 0.04rem;
+    /* border:2px solid red; */
+
+}
+.service-part2
+{
+    /* border: 2px solid green;DID FOR TETS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scrool-bar
+{
+    border: 2px solid rgb(0, 255, 251);
+    border: 2px solid #383838;  
+    border-radius: 16px;
+    /*TESTING */
+    /* min-height: 20px; */
+    display: flex;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+.footer
+{
+    /* height: 5vh; */
+    /* border:2px solid red; */
+}
+/*NAVIGATION BAR*/
+nav
+{
+    display: flex;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;margin: auto;
+    right: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(33, 33, 35, 0.8);
+    justify-content: space-around;
+    /* border:2px solid forestgreen;DID FOR TEST */
+    border: 2px solid #383838;  
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    backdrop-filter:blur(4px) ;
+    border-bottom: none;
+    padding: 10px 0px;
+}
+
+.space {
+    /* border: 2px solid red;
+    display: flex;
+    height: 60vh;
+    margin-bottom:0px; */
+}
+.nav1-highlight-add
+{
+    color:#f6b00d;
+}
+.about-hide
+{
+    display: none;
+}
+.portfolio-hide
+{
+    display: none;
+}
+.contact-hide
+{
+    display:none;
+}
+.nav1-highlight-remove
+{
+    color:white
+}
+.nav2-highlight-add
+{
+    color:#f6b00d;
+}
+.nav2-highlight-remove
+{
+    color:white
+}
+.nav3-highlight-add
+{
+    color:#f6b00d;
+}
+.nav3-highlight-remove
+{
+    color:white
+}                                                   
+
+
+
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+                            /* PORTFOLIO PAGE ENTERED */
+/* PORTFOLIO PAGE ENTERED ALL THE BEST */
+.portfolio
+{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e1f;
+    border: 2px solid #383838; 
+    /* border: 2px solid rebeccapurple; */
+    border-radius: 16px;
+}
+
+.portfolio-title
+{
+    position: relative;
+    font-size: 2rem;/* em becaution*/ 
+    margin-bottom: 30px;
+}
+.portfolio-title::after
+{
+    content: "";
+    position: absolute;
+    z-index: 222;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffc361;
+}
+.space
+{
+    height: 80px;
+}
+.portfolio-box:hover .portfolio-img
+{
+    transform: translateY(-10px);
+    
+}
+.portfolio-img
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px  rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 2px solid green;DID FOR TEST  */
+}
+.portfolio-content
+{
+    /* font-size: 22px; */
+
+    padding: 12px;
+    /* border: 2px solid rgb(5, 197, 235); */
+    color: white;
+}
+
+.portfolio-box
+{
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    /* border: 2px solid paleturquoise; */
+    
+}
+.portfolio-box:after{
+    /* margin-top: 20px; */
+    content: "";
+/* {   margin: auto; */
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    background-color: rgba(173, 173, 173, 0.2);
+    height: 2.4px;
+}
+.portfolio-img-box
+{
+    font-size: 0px;
+    /* height: 60%; */
+    /* border: 2px solid red; */
+    width: 96%;
+    /* height:auto; */
+    /* border: 2px solid gold;DID FOR TEST */
+    
+    /* overflow: hidden; */
+    border-radius: 30px;
+    /* overflow: hidden; */
+    /*      DID FOR TESTING*/
+    /* border: 2px solid yellow; */
+}
+.protfolio-content-one
+{
+    font-size:1.4rem;
+}
+.protfolio-content-two
+{
+    font-size: 0.8rem;
+}
+.contact-form-comman
+{
+    outline: none;
+    border: 2px solid #383838; 
+    background-color: inherit;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+.contact-page
+{
+    /* margin: auto; */
+    padding: 6rem 3rem 4rem 3rem;
+    height: 80vh;
+    width: 100%;
+    /* border:2px solid rgb(243, 88, 113);DID FOR TESTING */
+    border: 2px solid #302f2f;  
+    background-color: #1e1e1f;
+    border-radius: 16px;
+}
+.contact-page-heading
+{
+    /* border: 2px solid red; */
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.contact-page-heading::after
+{
+    content: "";
+    z-index: 222;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 3em;
+    height: 2px;
+    background-color: #ffc361;
+}
+.form-tittle
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 16px 0;
+}
+.send-message-button
+{
+    color:#ffc361;
+    font-size: 18px;
+}
+.telegram-img
+{
+    /* border: 2px solid red; */
+    margin-right: 20px;
+    width: 16px;
+    height: 16px;
+}
+
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/*MOBILE LAYOUT COMPLETED*/
+/* MOBILE LAYOUT COMPLETED */
+@media only screen and (min-width: 600px) {
+    :root
+    {
+        font-size: 20px;
+    }
+    .portfolio-title::after
+    {
+        content: "dd";
+        display: none;
+        background-color: #3333ca;
+    }
+    body{
+        /* background-color: yellow; */
+    }
+    .profile
+    {
+        /* height:20vh; */
+        padding: 2rem;
+        /* width: 96%; */
+    }
+    .avatar
+    {
+        height: 120%;
+    }
+    .testimonial-box
+    {
+        width: 98.4%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .profile-info
+    {
+    
+        padding-top: 1rem; 
+    }
+    .about-me-para
+    {
+        word-spacing: 0.2rem;
+    }
+    .nav-hover{
+        transition: 0.2s;
+    }
+    .nav-hover:hover
+    {
+        transform: scale(1.2);
+        transform: translateY(-4px);
+    }
+    :root
+    {
+        font-size: 20px;
+    }
+    html
+    {
+        font-size: 20px;
+    }
+    body 
+    {
+      display: flex;
+      flex-direction:row;
+      align-items: flex-start;
+      /* border: 2px solid rgb(0, 255, 47);DID FOR TEST */
+      height: 100%;
+      padding: 2rem 6rem;
+      background-color: rgb(1, 1, 1);
+      
+    }
+
+    .profile
+    {
+        height: auto;
+
+        margin: 0;
+        /* border: 2px solid red;DID FOR TEST */ 
+        position: static;
+        z-index: 22;
+        top: 29px;
+        /* display: s; */
+        width: auto;
+        /* width: 19%; */
+        margin: 0;
+    }
+    .profile-part2
+    {
+        display: block;
+    }
+    .about
+    {
+        
+        padding:6rem 3rem 4rem 3rem;
+        margin: 0;
+        font-size: 16px;
+        /* border: 2px solid red;DID FOR TEST */
+        width: 100%;/*LATER SET IT TO AUTO*/
+    }
+    .portfolio
+    {
+        padding:6rem 3rem 4rem 3rem;
+        margin: 0;
+        font-size: 16px;
+        /* border: 2px solid red;DID FOR TEST */
+        width: 100%;/*LATER SET IT TO AUTO*/
+    }
+    .about-text{
+        color: rgb(229, 229, 229);
+        font-size:2rem;
+        /* border: 2px solid rgb(255, 255, 0);DID FOR TEST */
+        /* width: 20%; */
+    }
+    nav
+    {   
+        bottom:auto;
+        align-items: center;
+        font-size: 22px;
+        display: flex;
+        position: absolute;
+        z-index: 333;
+        right: 0px;
+        left: auto;
+        top: 00px;
+        height:80px;
+        width: 60%;
+        /* border: 2px solid red;DID FOR TEST */
+        backdrop-filter: blur(2px);
+        background-color: rgba(33, 33, 35, 0.8);
+        justify-content: space-around;
+        /* border:2px solid forestgreen;DID FOR TEST */
+        /* border: 2px solid #f5f5f5;  DID FOR TEST */
+        border-top-left-radius: 0;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        backdrop-filter:blur(4px) ;
+        padding: 10px 0px;
+    }
+    .about-me-para
+    {
+        font-size: 1.4rem;
+        margin-bottom:1.4rem ;
+    }
+    .main
+    {
+        /* padding: 4rem; */
+        position: relative;
+        width: 75%;
+        margin: 0 0 0 20px;
+    }
+    .service
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        /* border: 2px solid blue; */
+        
+    }
+    .service-box
+{
+    display: flex;
+    width: 48%;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    margin-top:14px ;
+    padding: 8px 0px 8px 0px;
+    flex-direction: column;
+    align-items:center;
+    background-color: #29292c;
+    border-radius: 16px;
+    /* border: 2px solid purple;Testing remove after */
+    border: 2px solid #383838;  
+    
+}  
+    .testimonial-box
+    {
+        width: 48%;
+        margin-left: 0.8rem;
+        /* height: ; */
+    }
+   .service :nth-child(odd) {
+    margin-right: 0.8rem;
+    /* border: 2px solid green;DID FOR TEST */
+  }
+  .service-box
+  {
+    flex-direction: row;
+    padding: 1.4rem;
+  }
+  .service-img
+{
+    width: 6.5rem;
+    /* height:40px; */
+}
+.profile-part1
+{
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    height: 45%;
+    /* border: 2px solid gold;DID FOR TESTING */
+}
+.portfolio-box
+{
+    /* width:100%; */
+    /* border: 2px solid yellow;DID FOR TETS */
+    width: 32%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    
+    /* portfolio-bo */
+
+}
+.portfolio-list
+{
+    /* height: 900px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-wrap: 1; */
+}
+    .contact-form-name
+    {
+        width: 30%;
+    }
+    .contact-form-mail
+    {
+        width: 50%;
+    }
+    .contact-form-message
+    {
+        width: 80%;
+        height: 100px;
+    }
+    .form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile
+    {
+        height: 610px;
+        width: auto;
+        top: 2rem;
+        position: sticky;
+    }
+    .more-info
+    {
+        display: none;
+    }
+  }
